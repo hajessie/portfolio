@@ -1,38 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessie Ha's Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <div class="wrapper">
+        <div class="content">
+            <button class="green-button" onclick="redirect()">About Me</button>
 
-  <header>
-    <h1>About Me</h1>
-  </header>
+            <h1 class="anim">Hello<br>I'm Jessie Ha. :) </h1>
+            <p class="anim">I am a second-year cognitive science major with a minor in computer science. In my free time, I like to get boba with friends and play Fortnite.</p>
+        </div>
+        <div class="image">
+            <img src="images/portrait.png" class = "anim" alt="Jessie Ha's Image">
+        </div>
 
-  <section>
-    <h2>Hello, I'm [Your Name]</h2>
-    <p>Welcome to my personal website. Here you can learn more about me and my interests.</p>
+    </div>
 
-    <h3>Background</h3>
-    <p>I am a [Your Profession/Role] based in [Your Location]. I have a passion for [Your Interests/Hobbies], and I enjoy [Other Things You Like].</p>
+    <div class="side-by-side">
 
-    <h3>Skills</h3>
-    <p>Some of my skills include:</p>
-    <ul>
-      <li>Web Development</li>
-      <li>Graphic Design</li>
-      <li>[Add Your Skills]</li>
-    </ul>
+        <div class="linkedin-icon">
+            <a href="https://www.linkedin.com/in/jessieha/" target="_blank">
+                <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn Icon">
+            </a>
+         </div>
 
-    <h3>Contact</h3>
-    <p>Feel free to <a href="mailto:your.email@example.com">contact me</a>. You can also find me on <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>.</p>
-  </section>
+        <div class="linkedin-icon">
+            <a onclick="location.href='mailto:hajessie2@gmail.com';" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/666/666162.png" alt="LinkedIn Icon">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function redirect() {
+            // Replace 'target-page.html' with the actual URL you want to redirect to
+            window.location.href = 'about.html';
+        }
+    </script>
 
 </body>
-
 </html>

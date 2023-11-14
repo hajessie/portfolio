@@ -1,40 +1,169 @@
-body {
-    font-family: 'Arial', sans-serif;
+body{
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-  }
-  
-  section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1, h2, h3 {
-    color: #333;
-  }
-  
-  p {
-    line-height: 1.6;
-    color: #555;
-  }
-  
-  a {
-    color: #007BFF;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(https://i.pinimg.com/originals/2f/fd/12/2ffd12fdc3613c6f6aa4b77c6fb98e07.jpg);
+    background-size: cover; /* You can use other values like 'contain' or specific dimensions */
+  background-position: center center; /* You can adjust the positioning as needed */
+  background-repeat: no-repeat;
+}
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/back-image.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.login.btn {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 70px;
+}
+
+.content p {
+    margin: 10px 0 30px;
+    animation-delay: 0.5s;
+}
+
+.content .btn {
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 0.5s;
+}
+
+.btn:hover {
+    border-top-right-radius: 30px;
+}
+
+.feature-img.anim {
+    animation-delay: 1.5s;
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    color: #12401e;
+}
+
+.content {
+    max-width: 60%;
+}
+
+.image {
+    max-width: 40%;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.linkedin-icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.linkedin-icon img {
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+}
+
+.green-button {
+    display: inline-block;
+    padding: 12px 15px;
+    font-size: 16px;
     font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #4CAF50; /* Green border color */
+    color: #fff; /* White text color */
+    background-color: #4CAF50; /* Green background color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   }
-  
-  a:hover {
-    text-decoration: underline;
+
+  /* Hover effect */
+  .green-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    border-color: #45a049; /* Darker green border on hover */
   }
+
+  .side-by-side {
+    display: flex;
+}
+
+.side-by-side div {
+    margin: 10px; /* Adjust the margin as needed */
+    padding: 20px; /* Adjust the padding as needed */
+    border: none;
+}
